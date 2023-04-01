@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700;800&family=Lora:wght@400;500;600&family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+
+*{
+    margin: 0;
+    font-family: "poppins", sans-serif;
+    background-color: gray;
+}
+.text{
+    font-size: 70px;
+    text-align: center;
+    color: black;
+}
+.info{
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 50px;
+}
+#back{
+    font-size: 35px;
+}

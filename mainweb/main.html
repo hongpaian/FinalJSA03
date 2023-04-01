@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final JSA03</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <div class="root" >
+    <div class="container" >
+        <div id="navbar" >
+          <a href="#home" class="items" id="home"> Home</a>
+          <a href="#" class="items" id="store"> Store</a>
+          <a href="#" class="items" onclick="donate()" > Donate</a>
+          <a href="#" class="items"  onclick="update()"> More</a>
+        </div>
+        <div class="searchbar">
+          <input type="text" placeholder="Find something" id="search" onkeyup="search()" >  
+          <i class="fa fa-search" aria-hidden="true" id="searchicon" ></i>
+          <i class="fa fa-shopping-cart" aria-hidden="true" id="shoppingcart" onclick="shoppingcart()"></i>
+      </div>
+      <h3 id="MC">Manga-Comic</h3>
+        <div class="store" >
+        <div class="storeitems">
+          <img src="../img/JJK0.jpg" alt="" width="200px">
+                <h2 class="name">Jujutsu kaisen 0 </h2>
+                <h3 class="price">Price : 5$</h3>
+                <center>
+                <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+              </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/JJK1.jpg" alt="" width="200px">
+                <h2 class="name">Jujutsu kaisen 1 </h2>
+                <h3 class="price">Price : 2$</h3>
+                <center>
+                  <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+                </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/JJK2.jpg" alt="" width="200px">
+                <h2 class="name">Jujutsu kaisen 2 </h2>
+                <h3 class="price">Price : 2$</h3>
+                <center>
+                  <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+                </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/JJK3.jpg" alt="" width="200px">
+                <h2 class="name">Jujutsu kaisen 3 </h2>
+                <h3 class="price">Price : 2$</h3>
+                <center>
+                  <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+                </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/JJK4.jpg" alt="" width="200px">
+                <h2 class="name">Jujutsu kaisen 4 </h2>
+                <h3 class="price">Price : 2$</h3>
+                <center>
+                  <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+                </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/SXF1.jpg" alt="" width="200px">
+                <h2 class="name">Spy x Family 1 </h2>
+                <h3 class="price">Price : 3$</h3>
+                <center>
+                  <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+                </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/SXF2.jpg" alt="" width="200px">
+                <h2 class="name">Spy x Family 2 </h2>
+                <h3 class="price">Price : 3$</h3>
+                <center>
+                  <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+                </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/SXF3.jpg" alt="" width="200px">
+                <h2 class="name">Spy x Family 3 </h2>
+                <h3 class="price">Price : 3$</h3>
+                <center>
+                  <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+                </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/SXF4.jpg" alt="" width="200px">
+                <h2 class="name">Spy x Family 4 </h2>
+                <h3 class="price">Price : 3$</h3>
+                <center>
+                <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+              </center>
+        </div>
+        <div class="storeitems">
+          <img src="../img/SXF5.jpg" alt="" width="200px">
+                <h2 class="name">Spy x Family 5 </h2>
+                <h3 class="price">Price : 3$</h3>
+                <center>
+                <button class="addtocart" onclick="addToCart()"> Add to Cart</button>
+              </center>
+        </div>
+      </div>
+      <footer>
+      </center>
+       <a  id="alone1" > +8462632328 </a>      
+       <center>
+          <p id="mes"> Messages</p>
+      </center>
+          <textarea name="txt" id="txt" cols="30" rows="5" ></textarea>
+          <button id="sumbit" onclick="change7()" >Sumbit</button>
+          <div class="contact" >
+              <div  class="contactdiv1">
+                  <a  class="contactitems" > Need Help ?</a>
+                  <a  class="contactitems" > My Office</a>
+                  <a  class="contactitems" > Contact</a>
+              </div> 
+            <div class="contactdiv2" >
+              <p class="contactitems2" > Call us now! </p>
+              <p class="contactitems2" id="add" > 3721 Single Street  Quincy, MA 02169 </p>
+              <a  class="contactitems2" > anlhfs3948@fpt.edu.vn </a>
+            </div>
+          </div>
+          </footer> 
+    </div>
+  </div>
+  <div class="cart-popup">
+    <div class="cart-items">
+      <h3>Shopping Cart</h3>
+      <ul class="cart-list"></ul>
+      <div class="cart-total">
+        <span>Total: </span>
+        <span class="cart-total-price">$0</span>
+      </div>
+      <button class="clear-cart-btn">Clear Cart</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
